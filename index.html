@@ -15,14 +15,14 @@
         <div class="weather-app-wrapper">
             <div class="weather-app">
                 <div class="overview">
-                    <h1>
+                    <h1 id="city">
                         Mandalay
                     </h1>
                     <ul>
-                        <li>
+                        <li id="date">
                             Saturday 09:43
                         </li>
-                        <li>
+                        <li id="description">
                             Clear
                         </li>
                     </ul>
@@ -32,7 +32,7 @@
                         <div class="d-flex weather-temperature">
                             <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="Clear" id="icon" class="float-left">
                             <div class="float-left">
-                                <strong>35</strong>
+                                <strong id="temperature">35</strong>
                                 <span class="units">°C | <a href="#">°F</a>  </span>
                             </div>
                         </div>
@@ -42,11 +42,17 @@
                             <li>
                                 Chance of rain: 0%
                             </li>
-                            <li>
-                                Humidity: 73%
+                            <li >
+                                Humidity: <span id="humidity">
+                                    73
+                                </span>
+                                %
                             </li>
                             <li>
-                                wind : 1km/h
+                                Wind : <span id="wind">
+                                    1 
+                                </span>
+                                km/h
                             </li>
                         </ul>
                     </div>
