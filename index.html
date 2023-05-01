@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +11,22 @@
     <link rel="stylesheet" href="src/style.css">
     <title>Weather</title>
 </head>
+
 <body>
     <div class="container">
         <div class="weather-app-wrapper">
             <div class="weather-app">
+                <form id="search-form" class="mb-3">
+                    <div class="row">
+                        <div class="col-9">
+                            <input type="search" placeholder="Search for cities" class="form-control" id="city-input"
+                                autocomplete="off">
+                        </div>
+                        <div class="col-3">
+                            <input type="submit" value="Search" class="btn btn-primary w-100">
+                        </div>
+                    </div>
+                </form>
                 <div class="overview">
                     <h1 id="city">
                         Mandalay
@@ -33,7 +46,8 @@
                             <img src="" alt="Clear" id="icon" class="float-left">
                             <div class="float-left">
                                 <strong id="temperature">35</strong>
-                                <span class="units">°C | <a href="#">°F</a>  </span>
+                                <span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
+                                    <a href="#" id="fahrenheit-link">°F</a></span>
                             </div>
                         </div>
                     </div>
@@ -42,7 +56,7 @@
                             <li>
                                 Chance of rain: 0%
                             </li>
-                            <li >
+                            <li>
                                 Humidity: <span id="humidity">
                                     73
                                 </span>
@@ -50,7 +64,7 @@
                             </li>
                             <li>
                                 Wind : <span id="wind">
-                                    1 
+                                    1
                                 </span>
                                 km/h
                             </li>
@@ -59,10 +73,12 @@
                 </div>
             </div>
             <small>
-                <a href="https://github.com/sanmewin/weather_shecodes_challenge.git" target="_blank"> Open-Source Code</a> by SanMe
+                <a href="https://github.com/sanmewin/weather_shecodes_challenge.git" target="_blank"> Open-Source
+                    Code</a> by SanMe
             </small>
         </div>
     </div>
     <script src="src/app.js"></script>
 </body>
+
 </html>
