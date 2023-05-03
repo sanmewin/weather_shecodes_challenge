@@ -27,35 +27,20 @@
                         </div>
                     </div>
                 </form>
-                <div class="overview">
-                    <h1 id="city">
-                        Mandalay
-                    </h1>
-                    <ul>
-                        <li id="date">
-                            Saturday 09:43
-                        </li>
-                        <li id="description">
-                            Clear
-                        </li>
-                    </ul>
-                </div>
                 <div class="row">
-                    <div class="col-6">
-                        <div class="d-flex weather-temperature">
-                            <img src="" alt="Clear" id="icon" class="float-left">
-                            <div class="float-left">
-                                <strong id="temperature">35</strong>
-                                <span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
-                                    <a href="#" id="fahrenheit-link">°F</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
+                    <div class="col-5">
+                        <h1 id="city">
+                            Mandalay
+                        </h1>
                         <ul>
-                            <li>
-                                Chance of rain: 0%
+                            <li id="date">
+                                Saturday 09:43
                             </li>
+                        </ul>
+                        <h2 id="description">
+                            Clear
+                        </h2>
+                        <ul>
                             <li>
                                 Humidity: <span id="humidity">
                                     73
@@ -69,6 +54,29 @@
                                 km/h
                             </li>
                         </ul>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-flex weather-temperature">
+                            <div class="float-left">
+                                <strong id="temperature">35</strong>
+                                <span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
+                                    <a href="#" id="fahrenheit-link">°F</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-">
+                        <div class="weather-image"> <img src="" alt="Clear" id="icon" class="float-left"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="forecast-wrapper">
+                        <div class="forecast-box">
+                            <h3>
+                                WEEKLY FORECAST
+                            </h3>
+                            <div class="weather-forecast" id="forecast">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

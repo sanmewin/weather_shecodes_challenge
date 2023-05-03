@@ -21,6 +21,19 @@ h1 {
     font-size: 24px;
     margin-bottom: 0;
   }
+  h2{
+    font-weight: 700;
+    line-height: 25px;
+    font-size: 20px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+  }
+  h3
+  {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight:bold;
+  }
   ul{
     margin: 0;
     padding: 0;
@@ -32,20 +45,42 @@ h1 {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
-    text-transform: capitalize;
   }
-  .weather-temperature img{
+  .weather-image img{
+    position: relative;
     margin-right: 5px;
-    height: 64px;
-    width: 64px;
+    height: 130px;
+    width: 130px;
+    top: -40px;
   }
   .weather-temperature strong{
     font-weight: 500;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1;
   }
   .weather-temperature .units{
     position: relative;
-    font-size: 16px;
-    top: -28px;
+    font-size: 15px;
+    top: -15px;
   }
+  .forecast-box{
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.forecast-wrapper{
+    max-width: 600px;
+    margin: 30px auto;
+}
+.forecast-temperature-max{
+  font-size: 18px;
+  font-weight: bold;
+}
+.forecast-temperature-min{
+  font-size: 16px;
+}
+.forecast-date{
+  font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
